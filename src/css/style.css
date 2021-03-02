@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 100%;
 }
 
 .drum-pad {

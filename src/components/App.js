@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Display from './Display';
 import DrumPad from './DrumPad';
 
 function App() {
@@ -16,11 +17,11 @@ function App() {
 
   return (
     <main className='App' id='drum-machine'>
-      <h1 id='display'>Hello world</h1>
-      {padNames.map((pad) => {
-        return <DrumPad name={pad} setPadNames={setPadNames} key={pad} />;
+      <h1>Welcome to my drum machine</h1>
+      {padNames.map((pad, idx) => {
+        return <DrumPad name={pad} setPadNames={setPadNames} key={idx} />;
       })}
-      <DrumPad name='hello' />
+      <Display />
     </main>
   );
 }

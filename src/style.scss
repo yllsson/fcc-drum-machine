@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include flex(row);
+  width: 100vw;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 100%;
 }
 
 .drum-pad {
