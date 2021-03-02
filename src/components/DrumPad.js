@@ -1,17 +1,20 @@
-const DrumPad = ({ name }) => {
+const DrumPad = ({ pad }) => {
   const playAudio = () => {
     // insert audio playing function here
   };
 
+  console.log(pad.name);
+
   return (
     <button
       className='drum-pad'
+      id={pad.key}
       onClick={() => {
         playAudio();
       }}
     >
-      <h2>{name}</h2>
-      <audio src='#' className='clip' id={name}></audio>
+      <h2>{pad.name}</h2>
+      <audio src={pad.audio} className='clip' id={pad.name}></audio>
     </button>
   );
 };

@@ -1,27 +1,77 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Display from './Display';
 import DrumPad from './DrumPad';
 
 function App() {
-  const [padNames, setPadNames] = useState([
-    'Q',
-    'W',
-    'E',
-    'A',
-    'S',
-    'D',
-    'Z',
-    'X',
-    'C',
+  const [pads, setPads] = useState([
+    {
+      name: 'Q',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'W',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'E',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'A',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'S',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'D',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'Z',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'X',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
+    {
+      name: 'C',
+      key: '',
+      audio: 'URL to audioFile',
+      id: 'description of audioFile',
+    },
   ]);
 
   return (
     <main className='App' id='drum-machine'>
-      <h1>Welcome to my drum machine</h1>
-      {padNames.map((pad, idx) => {
-        return <DrumPad name={pad} setPadNames={setPadNames} key={idx} />;
-      })}
-      <Display />
+      <section className='container'>
+        <div className='drum'>
+          {pads.map((pad, idx) => {
+            pad.key = idx;
+            return <DrumPad pad={pad} key={pad.key} />;
+          })}
+        </div>
+
+        <Display />
+      </section>
     </main>
   );
 }

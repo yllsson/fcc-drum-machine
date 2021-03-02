@@ -1,5 +1,9 @@
 const Display = () => {
-  return <div id='display'>{Display}</div>;
+  return (
+    <div className='display' id='display'>
+      display
+    </div>
+  );
 };
 
 export default Display;
