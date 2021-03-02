@@ -11,23 +11,14 @@ function App() {
     'D',
     'Z',
     'X',
-    'C'
+    'C',
   ]);
 
   return (
     <main className='App' id='drum-machine'>
       <h1 id='display'>Hello world</h1>
-      {padNames.map((pad, idx) => {
-        console.log(padNames);
-
-        console.log(idx, pad[idx]);
-        return (
-          <DrumPad
-            name={`${pad[idx]}`}
-            setPadNames={setPadNames}
-            key={`hello${idx}`}
-          />
-        );
+      {padNames.map((pad) => {
+        return <DrumPad name={pad} setPadNames={setPadNames} key={pad} />;
       })}
       <DrumPad name='hello' />
     </main>
