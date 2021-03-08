@@ -8,56 +8,56 @@ function App() {
       name: 'Q',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'W',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'E',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'A',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'S',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'D',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'Z',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'X',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
+      id: 'description of audioFile'
     },
     {
       name: 'C',
       key: '',
       audio: 'URL to audioFile',
-      id: 'description of audioFile',
-    },
+      id: 'description of audioFile'
+    }
   ]);
 
   return (
