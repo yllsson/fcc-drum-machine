@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 import Display from './Display';
 import DrumPad from './DrumPad';
-import { clap, crash } from './AudioImports';
+import {
+  clap,
+  crash,
+  kickH,
+  laser,
+  punch,
+  shaker,
+  snareB,
+  tick,
+  tom,
+} from './audioImports';
 
 function App() {
   const [pads, setPads] = useState([
@@ -20,43 +30,43 @@ function App() {
     {
       name: 'E',
       key: '',
-      audio: 'URL to audioFile',
+      audio: kickH,
       id: 'description of audioFile',
     },
     {
       name: 'A',
       key: '',
-      audio: 'URL to audioFile',
+      audio: shaker,
       id: 'description of audioFile',
     },
     {
       name: 'S',
       key: '',
-      audio: 'URL to audioFile',
+      audio: snareB,
       id: 'description of audioFile',
     },
     {
       name: 'D',
       key: '',
-      audio: 'URL to audioFile',
+      audio: tom,
       id: 'description of audioFile',
     },
     {
       name: 'Z',
       key: '',
-      audio: 'URL to audioFile',
+      audio: laser,
       id: 'description of audioFile',
     },
     {
       name: 'X',
       key: '',
-      audio: 'URL to audioFile',
+      audio: punch,
       id: 'description of audioFile',
     },
     {
       name: 'C',
       key: '',
-      audio: 'URL to audioFile',
+      audio: tick,
       id: 'description of audioFile',
     },
   ]);
