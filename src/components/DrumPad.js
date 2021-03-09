@@ -1,7 +1,15 @@
 const DrumPad = ({ pad }) => {
   const playAudio = () => {
+    stopAudio();
     document.getElementById(pad.name).play();
-    console.log(document.getElementById(pad.name));
+  };
+
+  const stopAudio = () => {
+    let allAudios = document.querySelectorAll('.clip');
+    allAudios.forEach((audio) => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
   };
 
   return (

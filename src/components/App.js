@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Display from './Display';
 import DrumPad from './DrumPad';
-import { clap } from './AudioImports';
+import { clap, crash } from './AudioImports';
 
 function App() {
   const [pads, setPads] = useState([
@@ -14,7 +14,7 @@ function App() {
     {
       name: 'W',
       key: '',
-      audio: 'URL to audioFile',
+      audio: crash,
       id: 'description of audioFile',
     },
     {
