@@ -1,14 +1,13 @@
 const DrumPad = ({ pad }) => {
   const playAudio = () => {
-    // insert audio playing function here
+    document.getElementById(pad.name).play();
+    console.log(document.getElementById(pad.name));
   };
-
-  console.log(pad.name);
 
   return (
     <button
       className='drum-pad'
-      id={pad.key}
+      id={pad.id}
       onClick={() => {
         playAudio();
       }}
