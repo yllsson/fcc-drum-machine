@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Display from './Display';
 import DrumPad from './DrumPad';
-import kyle from '../audio/kylesImage.jpg';
+import { clap } from './AudioImports';
 
 function App() {
   const [pads, setPads] = useState([
     {
       name: 'Q',
       key: '',
-      audio: '../audio/clap-808.wav',
+      audio: clap,
       id: 'clap',
     },
     {
@@ -73,7 +73,6 @@ function App() {
 
         <Display />
       </section>
-      <img width='200px' src={kyle} alt='hello'></img>
     </main>
   );
 }
