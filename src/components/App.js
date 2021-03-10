@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Display from './Display';
 import DrumPad from './DrumPad';
 import {
@@ -84,6 +84,7 @@ function App() {
                 key={pad.key}
                 setPads={setPads}
                 setDisplayText={setDisplayText}
+                useEffect={useEffect}
               />
             );
           })}

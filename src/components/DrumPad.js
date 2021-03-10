@@ -1,4 +1,4 @@
-const DrumPad = ({ pad, setDisplayText }) => {
+const DrumPad = ({ pad, setDisplayText, useEffect }) => {
   const playAudio = () => {
     stopAudio();
     setDisplayText(pad.id);
@@ -12,6 +12,24 @@ const DrumPad = ({ pad, setDisplayText }) => {
       audio.currentTime = 0;
     });
   };
+
+  useEffect(() => {
+    window.addEventListener('keydown', event => {
+      if (event.key === pad.name.toLowerCase()) {
+        console.log(event.key);
+        playAudio();
+      }
+    });
+
+    return () => {
+      window.removeEventListener('keydown', event => {
+        if (event.key === pad.name.toLowerCase()) {
+          console.log(event.key);
+          playAudio();
+        }
+      });
+    };
+  });
 
   return (
     <button
