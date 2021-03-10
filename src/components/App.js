@@ -10,7 +10,7 @@ import {
   shaker,
   snareB,
   tick,
-  tom,
+  tom
 } from './audioImports';
 
 function App() {
@@ -19,57 +19,58 @@ function App() {
       name: 'Q',
       key: '',
       audio: clap,
-      id: 'clap',
+      id: 'Clap'
     },
     {
       name: 'W',
       key: '',
       audio: crash,
-      id: 'description of audioFile',
+      id: 'Crash'
     },
     {
       name: 'E',
       key: '',
       audio: kickH,
-      id: 'description of audioFile',
+      id: 'Kick'
     },
     {
       name: 'A',
       key: '',
       audio: shaker,
-      id: 'description of audioFile',
+      id: 'Shaker'
     },
     {
       name: 'S',
       key: '',
       audio: snareB,
-      id: 'description of audioFile',
+      id: 'Snare'
     },
     {
       name: 'D',
       key: '',
       audio: tom,
-      id: 'description of audioFile',
+      id: 'Tom'
     },
     {
       name: 'Z',
       key: '',
       audio: laser,
-      id: 'description of audioFile',
+      id: 'Laser'
     },
     {
       name: 'X',
       key: '',
       audio: punch,
-      id: 'description of audioFile',
+      id: 'Punch'
     },
     {
       name: 'C',
       key: '',
       audio: tick,
-      id: 'description of audioFile',
-    },
+      id: 'Tick'
+    }
   ]);
+  const [displayText, setDisplayText] = useState('hello');
 
   return (
     <main className='App' id='drum-machine'>
@@ -77,11 +78,18 @@ function App() {
         <div className='drum'>
           {pads.map((pad, idx) => {
             pad.key = idx;
-            return <DrumPad pad={pad} key={pad.key} setPads={setPads} />;
+            return (
+              <DrumPad
+                pad={pad}
+                key={pad.key}
+                setPads={setPads}
+                setDisplayText={setDisplayText}
+              />
+            );
           })}
         </div>
 
-        <Display />
+        <Display displayText={displayText} />
       </section>
     </main>
   );

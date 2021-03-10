@@ -1,12 +1,13 @@
-const DrumPad = ({ pad }) => {
+const DrumPad = ({ pad, setDisplayText }) => {
   const playAudio = () => {
     stopAudio();
+    setDisplayText(pad.id);
     document.getElementById(pad.name).play();
   };
 
   const stopAudio = () => {
     let allAudios = document.querySelectorAll('.clip');
-    allAudios.forEach((audio) => {
+    allAudios.forEach(audio => {
       audio.pause();
       audio.currentTime = 0;
     });
