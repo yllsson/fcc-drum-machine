@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 @mixin flex($direction) {
   display: flex;
   flex-direction: $direction;
@@ -11,9 +7,19 @@
   align-items: center;
 }
 
+$background-color: #f3a968;
+$container-color: #5f9ea0;
+$drumPad-color: #bfd8d9;
+$drumPad-text: #5f9ea0;
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   @include flex(row);
   width: 100vw;
+  background-color: $background-color;
 
   font-family: 'Roboto', sans-serif;
 }
@@ -25,32 +31,51 @@ main {
 }
 
 .container {
-  @include flex(row);
+  @include flex(column-reverse);
   justify-content: space-around;
 
-  width: 90%;
+  width: 50%;
   height: 70%;
   padding: 2rem;
 
-  border: 1px solid lightgray;
-}
-
-.drum {
-  width: 70%;
-  height: 90%;
+  background-color: $container-color;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 }
 
 .display {
   @include flex(row);
-  width: 30%;
-  height: 90%;
+  width: 90%;
+  height: 40%;
 
-  border: 1px solid lightgray;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.drum {
+  @include flex(row);
+  flex-wrap: wrap;
+  width: 90%;
+  height: 50%;
 }
 
 .drum-pad {
-  background-color: blue;
-  color: #fff;
-  width: 33%;
-  height: 33%;
+  width: 32%;
+  height: 32%;
+  margin: 0.33%;
+
+  background-color: $drumPad-color;
+  color: $drumPad-text;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.drum-pad:active,
+.drum-pad:focus {
+  outline: none;
+}
+
+.drum-pad:active {
+  box-shadow: none;
 }

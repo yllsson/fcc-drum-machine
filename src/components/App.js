@@ -70,7 +70,7 @@ function App() {
       id: 'Tick'
     }
   ]);
-  const [displayText, setDisplayText] = useState('hello');
+  const [displayText, setDisplayText] = useState('Press any key to play');
 
   return (
     <main className='App' id='drum-machine'>
