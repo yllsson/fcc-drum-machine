@@ -28,9 +28,10 @@ main {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
+  width: 35rem;
   height: 70%;
   padding: 2rem;
+  margin: 5rem;
   background-color: #5f9ea0;
   border-radius: 15px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
@@ -45,6 +46,11 @@ main {
   height: 40%;
   border-radius: 15px;
   background-color: #fff;
+}
+
+.display h2 {
+  text-align: center;
+  margin: 2rem;
 }
 
 .drum {

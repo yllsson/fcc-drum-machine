@@ -5,7 +5,9 @@ import allPads from './allPads';
 
 function App() {
   const [pads, setPads] = useState(allPads);
-  const [displayText, setDisplayText] = useState('Press any key to play');
+  const [displayText, setDisplayText] = useState(
+    `Welcome to my Drum Machine! Press any key to play`
+  );
 
   return (
     <main className='App' id='drum-machine'>
