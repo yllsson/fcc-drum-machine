@@ -2,7 +2,16 @@ const DrumPad = ({ pad, setDisplayText, useEffect }) => {
   const playAudio = () => {
     stopAudio();
     setDisplayText(pad.id);
-    document.getElementById(pad.name).play();
+    const audioElement = document.getElementById(pad.name);
+    let playPromise = audioElement.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {})
+        .catch(error => {
+          // console.log('');
+        });
+    }
   };
 
   const stopAudio = () => {
@@ -15,16 +24,14 @@ const DrumPad = ({ pad, setDisplayText, useEffect }) => {
 
   useEffect(() => {
     window.addEventListener('keydown', event => {
-      if (event.key === pad.name.toLowerCase()) {
-        console.log(event.key);
+      if (event.code === pad.code) {
         playAudio();
       }
     });
 
     return () => {
       window.removeEventListener('keydown', event => {
-        if (event.key === pad.name.toLowerCase()) {
-          console.log(event.key);
+        if (event.code === pad.code) {
           playAudio();
         }
       });
