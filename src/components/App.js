@@ -1,75 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Display from './Display';
 import DrumPad from './DrumPad';
-import {
-  clap,
-  crash,
-  kickH,
-  laser,
-  punch,
-  shaker,
-  snareB,
-  tick,
-  tom
-} from './audioImports';
+import allPads from './allPads';
 
 function App() {
-  const [pads, setPads] = useState([
-    {
-      name: 'Q',
-      key: '',
-      audio: clap,
-      id: 'Clap'
-    },
-    {
-      name: 'W',
-      key: '',
-      audio: crash,
-      id: 'Crash'
-    },
-    {
-      name: 'E',
-      key: '',
-      audio: kickH,
-      id: 'Kick'
-    },
-    {
-      name: 'A',
-      key: '',
-      audio: shaker,
-      id: 'Shaker'
-    },
-    {
-      name: 'S',
-      key: '',
-      audio: snareB,
-      id: 'Snare'
-    },
-    {
-      name: 'D',
-      key: '',
-      audio: tom,
-      id: 'Tom'
-    },
-    {
-      name: 'Z',
-      key: '',
-      audio: laser,
-      id: 'Laser'
-    },
-    {
-      name: 'X',
-      key: '',
-      audio: punch,
-      id: 'Punch'
-    },
-    {
-      name: 'C',
-      key: '',
-      audio: tick,
-      id: 'Tick'
-    }
-  ]);
+  const [pads, setPads] = useState(allPads);
   const [displayText, setDisplayText] = useState('Press any key to play');
 
   return (
