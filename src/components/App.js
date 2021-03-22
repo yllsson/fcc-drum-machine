@@ -5,9 +5,13 @@ import allPads from './allPads';
 
 function App() {
   const [pads, setPads] = useState(allPads);
-  const [displayText, setDisplayText] = useState(
-    `Welcome to my Drum Machine! Press any key to play`
-  );
+  const [displayText, setDisplayText] = useState(`Welcome to my Drum Machine!`);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDisplayText('Press any key to play!');
+    }, 3000);
+  }, []);
 
   return (
     <main className='App' id='drum-machine'>
