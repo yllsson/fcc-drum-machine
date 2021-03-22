@@ -28,7 +28,7 @@ main {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 28%;
+  width: 25%;
   height: 75%;
   padding: 2rem;
   margin: 5rem;
@@ -52,6 +52,7 @@ main {
   text-align: center;
   margin: 2rem;
   font-size: 2em;
+  transition: all 1.3s ease;
 }
 
 .drum {
