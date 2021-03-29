@@ -85,6 +85,10 @@ main {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+.drum-pad h2 {
+  font-size: 1.4rem;
+}
+
 .drum-pad:active,
 .drum-pad:focus {
   outline: none;
@@ -97,5 +101,23 @@ main {
 @media only screen and (max-width: 500px) {
   .container {
     margin: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .container {
+    width: 40rem;
+  }
+  .display {
+    font-size: 2rem;
+  }
+  .drum-pad h2 {
+    font-size: 2rem;
   }
 }

@@ -7,13 +7,13 @@ function App() {
   const [pads, setPads] = useState(allPads);
   const [displayText, setDisplayText] = useState(`Welcome to my Drum Machine!`);
 
-  let change = () => {
+  const change = () => {
     const message = document.getElementById('message');
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         message.classList.remove('visible');
-      }, 2000);
-      setTimeout(resolve, 3000);
+      }, 1500);
+      setTimeout(resolve, 2500);
     }).then(() => {
       setDisplayText('Press any key to play!');
       message.classList.add('visible');
