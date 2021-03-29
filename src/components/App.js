@@ -12,8 +12,8 @@ function App() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         message.classList.remove('visible');
-      }, 1500);
-      setTimeout(resolve, 2500);
+      }, 1250);
+      setTimeout(resolve, 2250);
     }).then(() => {
       setDisplayText('Press any key to play!');
       message.classList.add('visible');
