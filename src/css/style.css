@@ -11,6 +11,8 @@ body {
   width: 100vw;
   background-color: #f2f7f7;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -28,7 +30,8 @@ main {
   justify-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 25%;
+  min-width: 20rem;
+  width: 25rem;
   height: 75%;
   padding: 2rem;
   margin: 5rem;
@@ -89,4 +92,10 @@ main {
 
 .drum-pad:active {
   box-shadow: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin: 2rem;
+  }
 }
