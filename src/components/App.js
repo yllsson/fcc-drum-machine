@@ -7,10 +7,21 @@ function App() {
   const [pads, setPads] = useState(allPads);
   const [displayText, setDisplayText] = useState(`Welcome to my Drum Machine!`);
 
-  useEffect(() => {
-    setTimeout(() => {
+  let change = () => {
+    const message = document.getElementById('message');
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        message.classList.remove('visible');
+      }, 2000);
+      setTimeout(resolve, 3000);
+    }).then(() => {
       setDisplayText('Press any key to play!');
-    }, 3000);
+      message.classList.add('visible');
+    });
+  };
+
+  useEffect(() => {
+    change();
   }, []);
 
   return (

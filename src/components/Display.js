@@ -1,7 +1,9 @@
 const Display = ({ displayText }) => {
   return (
     <div className='display' id='display'>
-      <h2>{displayText}</h2>
+      <h2 className='visible' id='message'>
+        {displayText}
+      </h2>
     </div>
   );
 };

@@ -55,7 +55,14 @@ main {
   h2 {
     text-align: center;
     margin: 2rem;
+    opacity: 0;
     font-size: 2em;
+    transition: opacity 0.5s ease-in;
+  }
+
+  h2.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
   }
 }
 
