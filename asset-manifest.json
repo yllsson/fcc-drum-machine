@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/fcc-drum-machine/static/css/main.7389ea80.chunk.css",
+    "main.js": "/fcc-drum-machine/static/js/main.44560716.chunk.js",
+    "main.js.map": "/fcc-drum-machine/static/js/main.44560716.chunk.js.map",
+    "runtime-main.js": "/fcc-drum-machine/static/js/runtime-main.9f80c2ba.js",
+    "runtime-main.js.map": "/fcc-drum-machine/static/js/runtime-main.9f80c2ba.js.map",
+    "static/js/2.8a88f61b.chunk.js": "/fcc-drum-machine/static/js/2.8a88f61b.chunk.js",
+    "static/js/2.8a88f61b.chunk.js.map": "/fcc-drum-machine/static/js/2.8a88f61b.chunk.js.map",
+    "index.html": "/fcc-drum-machine/index.html",
+    "static/css/main.7389ea80.chunk.css.map": "/fcc-drum-machine/static/css/main.7389ea80.chunk.css.map",
+    "static/js/2.8a88f61b.chunk.js.LICENSE.txt": "/fcc-drum-machine/static/js/2.8a88f61b.chunk.js.LICENSE.txt",
+    "static/media/clap.7ca33eda.wav": "/fcc-drum-machine/static/media/clap.7ca33eda.wav",
+    "static/media/crash.611135ae.wav": "/fcc-drum-machine/static/media/crash.611135ae.wav",
+    "static/media/kickH.13df76a2.wav": "/fcc-drum-machine/static/media/kickH.13df76a2.wav",
+    "static/media/laser.023715a9.wav": "/fcc-drum-machine/static/media/laser.023715a9.wav",
+    "static/media/punch.7e075b6f.wav": "/fcc-drum-machine/static/media/punch.7e075b6f.wav",
+    "static/media/shaker.ef58fbbb.wav": "/fcc-drum-machine/static/media/shaker.ef58fbbb.wav",
+    "static/media/snareB.e1471fea.wav": "/fcc-drum-machine/static/media/snareB.e1471fea.wav",
+    "static/media/tick.b78647d2.wav": "/fcc-drum-machine/static/media/tick.b78647d2.wav",
+    "static/media/tom.52db9c23.wav": "/fcc-drum-machine/static/media/tom.52db9c23.wav"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f80c2ba.js",
+    "static/js/2.8a88f61b.chunk.js",
+    "static/css/main.7389ea80.chunk.css",
+    "static/js/main.44560716.chunk.js"
+  ]
+}
